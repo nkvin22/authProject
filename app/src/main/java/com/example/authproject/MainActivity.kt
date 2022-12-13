@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
                 .createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        Toast.makeText(this, "მომხმარებელი წარმატებით შეიქმნა!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "მომხმარებელი წარმატებით შეიქმნა :)", Toast.LENGTH_SHORT).show()
                     } else {
-                        Toast.makeText(this, "Error!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "გადაამოწმეთ მონაცემები! :(", Toast.LENGTH_SHORT).show()
                     }
                 }
         }
